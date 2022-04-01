@@ -137,6 +137,20 @@ header h3{
 
 }
 
+@keyframes efecto_color {
+    0% {background-color: white;}
+    20% {background: #E9EDC9;}
+    40% { background-color: #f8fcd2;}
+    60% { background-color: #e7c8a0;}
+    80% {background-color: #FAEDCD; }
+    100% {background-color: #D4A373;}
+}
+.tituloDestacados {
+    animation-name: efecto_color;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
 
 /*FOOTER INDEX*/
 
