@@ -232,13 +232,31 @@ header h3{
 
 .datosPersona {
     background-color:#FEFAE0 ;
-    padding: 50px 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:20px ;
-    text-align: center;
 }
-.datosPersona h4 {
-    padding: 50px;
+.datosPersona label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.form-check-label {
+    font-style: italic;
+    text-align: left;
+}
+.container {
+    background-color: black;
+    color: white; 
+}
+.registrarseAca label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.registrate h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
 }
 
 /*FOOTER MI CUENTA*/

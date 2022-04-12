@@ -29,18 +29,45 @@
 	</header>
     <section>
 		<article class="datosPersona">
-			<form action="1">
+			<!--<form action="1">
                 <label for="datos">Si tenes cuenta, ingresá con tu e-mail y contraseña:
                 </label>
                     <input type="text" placeholder="Ingresá tu mail"><br>
                     <input type="text" placeholder="Ingresá tu contraseña"><br>
-                    <button id="enviar" type="submit" onclick="cifrar()">Enviar</button>
-                <div>
-                <h4 class="h1">¿Sos nuevo?</h4>
-                <label for="datos">Registrate acá:
-                </label>
-                    <input type="submit" value="REGISTRARSE">
+                    <button id="enviar" type="submit" onclick="cifrar()">Enviar</button> -->
+            <form>
+                <h1 class="h3">Si tenes cuenta, ingresá con tu e-mail y contraseña: </h1>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Recordar usuario</label>
+                </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                <div class="form-check form-switch">
+                    <h4>¿Desea recibir novedades por mail?</h4>
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Aceptar</label>
+                </div>
+            </form>
+            <div class="container">   
+                <div class="row">
+                    <div class="col-lg-3 col-md-9 col-sm-12">
+                    <h4 class="registrate">¿Sos nuevo?</h4>
+                    </div>
+                    <div class="col-lg-9 col-md-3 col-sm-12 registrarseAca">
+                        <label for="datos">Registrate acá:
+                        </label>
+                        <button type="button" class="btn btn-outline-secondary">REGISTRARSE</button>
+                    </div>
+                </div>
+            </div>   
             </form>
         </article>
     </section>
@@ -53,6 +80,6 @@
         </div>
 	</footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
