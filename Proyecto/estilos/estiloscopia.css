@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62,5%;
+}
+/*INDEX*/
+/*HEADER*/
+
+.contenedorLogoPrincipal {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: #D4A373;
+}
+.contenedorLogoPrincipal img{
+
+    width:150px ;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+
+}
+.tituloPrincipal {
+    font-family:'Arial Narrow';
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 20px;
+}
+header h3{
+    text-align: center;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 20px;
+}
+
+.menu{
+    background-color:#FAEDCD;
+}
+
+.menu li{
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 10px 10px;
+    margin: 10px;
+
+}
+.menu li a{
+    text-decoration: none;
+}
+.submenu{
+    display: none;
+    position: absolute;
+}
+
+.submenu li a {
+    color: black;
+}
+
+.submenu li{
+    display: block;
+    background-color:#FAEDCD;
+    padding: 5px;
+}
+.menu li:hover ul{
+    display: block;
+}
+.submenu li a {
+    font-size: 13px;
+}
+
+.logoWhatsapp {
+    max-width: 80px;
+    max-height: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:#12e671;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; 
+}
+.logoWhatsapp h3 {
+    background-color: #12e671;
+}
+
+
+/*SECTION INDEX*/
+
+.navegacionIndex {
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+.navegacionIndex img {
+    width:350px ;
+    height: 300px;
+    transition: height 3s;
+}
+.navegacionIndex img:hover {
+    height:350px ;
+}
+.tituloDestacados{
+    font-family:'Times New Roman';
+    font-style: italic;
+    color: black;
+    background-color: #f8fcd2;
+    text-align: center;
+}
+.contenedorDestacados img {
+    width:250px ;
+    height: 200px;
+}
+
+.fondoCafe {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/004/773/864/non_2x/stylish-templates-with-organic-abstract-shapes-and-line-in-nude-colors-pastel-background-in-minimalist-style-contemporary-illustration-free-vector.jpg");
+
+}
+
+.contenedorDestacados {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    justify-items: center;
+
+}
+
+@keyframes efecto_color {
+    0% {background-color: white;}
+    20% {background: #E9EDC9;}
+    40% { background-color: #f8fcd2;}
+    60% { background-color: #e7c8a0;}
+    80% {background-color: #FAEDCD; }
+    100% {background-color: #D4A373;}
+}
+.tituloDestacados {
+    animation-name: efecto_color;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+}
+
+/*FOOTER INDEX*/
+
+#footer {
+    padding: 50px 50px;
+    background-image:linear-gradient(to right, #E9EDC9, #FAEDCD);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: row;
+    justify-content: space-around;
+}
+.pieDePagina img{
+    width: 100px;
+    height: 100px;
+}
+.pieDePagina h3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+/*PAGINA PRODUCTOS*/
+/*HEADER PRODUCTOS*/
+
+#headerProductos {
+    background-color: #D4A373; 
+}
+
+/*SECTION PRODUCTOS*/ 
+
+.seccionProductos {
+    background-color: #FEFAE0;
+    padding: 20px 20px;
+}
+.seccionProductos h3 {
+    padding: 10px;
+    font-family:'Times New Roman';
+    font-style: italic;
+    color: black;
+    text-align: center;
+}
+.formularioProductos {
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:20px ;
+    text-align: center;
+
+}
+.formularioProductos p {
+    padding: 10px;
+}
+
+.cajaContenedoraImg img{
+    width: 250px;
+    height: 250px;
+    
+}
+
+/*FOOTER PRODUCTOS*/
+
+#footerProductos {
+    padding: 50px 50px;
+    background-image:linear-gradient(to right, #E9EDC9, #FAEDCD);
+    display: flex;
+    justify-content: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+/*PAGINA MI CUENTA*/
+/*HEADER MI CUENTA IDEM ANTERIOR*/
+
+/*SECTION MI CUENTA*/
+
+.datosPersona {
+    background-color:#FEFAE0 ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:20px ;
+}
+.datosPersona label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.form-check-label {
+    font-style: italic;
+    text-align: left;
+}
+.container {
+    background-color: black;
+    color: white; 
+}
+.registrarseAca label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.registrate h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+/*FOOTER MI CUENTA*/
+#footerMiCuenta {
+    padding: 50px 50px;
+    background-image:linear-gradient(to right, #E9EDC9, #FAEDCD);
+    display: flex;
+    justify-content: row;
+    justify-content: space-around;
+}
+
+/*PAGINA EMPRESA*/
+/*HEADER EMPRESA*/
+
+.submenuEmpresa li{
+    background-image:radial-gradient(#fbfaf8,#D4A373 );;
+    padding: 30px 30px;
+}
+/*SECTION EMPRESA*/
+
+.submenuEmpresa h4{
+    background-color:#e7c8a0;
+    padding: 30px 30px;
+    border: solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:20px ;
+    text-align: center;
+}
+
+
+
+
+.etiquetaHistoria {
+    background-image:radial-gradient(#fbfaf8,#D4A373 );
+    }
+
+.etiquetaHistoria p {
+    padding: 30px 30px;
+    display: flex;
+    text-align: center;
+    
+
+}
+.wild {
+    background-color:#e7c8a0;
+    padding: 30px 30px;
+    border: solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:20px ;
+    text-align: center;
+    }
+
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*FOOTER EMPRESA*/
+
+#footerEmpresa {
+    padding: 50px 50px;
+    background-image:linear-gradient(to right, #E9EDC9, #FAEDCD);
+    display: flex;
+    justify-content: row;
+    justify-content: space-around;
+}
+
+/*PAGINA CONTACTO*/
+/*HEADER CONTACTO IDEM INDEX*/
+
+/*SECTION CONTACTO*/
+
+#contenedorContacto {
+    background-color:#FEFAE0;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:20px ;
+    text-align: center;
+}
+.mapa iframe{
+    width: 150px;
+    height: 150px;
+    transition: height 2s;
+}
+.mapa iframe:hover {
+    height: 200px;
+
+}
+
+
+#footerContacto {
+    padding: 50px 50px;
+    background-image:linear-gradient(to right, #E9EDC9, #FAEDCD);
+    display: flex;
+    justify-content: row;
+    justify-content: space-around;
+}
+
+
+/*RESPONSIVE TABLET INDEX*/
+
+@media screen and (max-width: 765px){
+    
+    .contenedorLogoPrincipal {
+            background-color: #e7c8a0;
+            align-content: flex-start;
+            align-items: flex-start;      
+}
+    .navegacionIndex{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-items: stretch;
+    }
+}
+
+/*RESPONSIVE CELULAR INDEX*/
+@media screen and (max-width: 500px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .navegacionIndex {
+        display: flex;
+        flex-direction: column-reverse;
+    }  
+    .navegacionIndex img {
+        width:250px ;
+        height: 200px;
+    }
+}
+@media screen and (max-width:320px) {
+    .contenedorDestacados {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width:250px ;
+        height: 200px;
+    }
+
+}
+
+/*RESPONSIVE TABLET EMPRESA*/
+
+
