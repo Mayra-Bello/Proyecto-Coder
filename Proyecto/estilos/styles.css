@@ -1,0 +1,91 @@
+footer {
+  padding: 15px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62,5%; }
+
+.primerParrafo {
+  background-color: #D4A373; }
+  .primerParrafo h3 {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center; }
+  .primerParrafo p {
+    font-style: italic;
+    font-size: 15px;
+    padding: 20px; }
+  .primerParrafo:hover {
+    font-size: 20px; }
+
+.segundoParrafo {
+  background-color: #FAEDCD; }
+  .segundoParrafo h3 {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: left; }
+  .segundoParrafo p {
+    font-style: italic;
+    font-size: 15px;
+    padding: 20px; }
+  .segundoParrafo:hover {
+    font-size: 20px; }
+
+.tercerParrafo {
+  background-color: #fefae0; }
+  .tercerParrafo h3 {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center; }
+  .tercerParrafo p {
+    font-style: italic;
+    font-size: 15px;
+    padding: 20px; }
+  .tercerParrafo:hover {
+    font-size: 20px; }
+
+.texto1, .texto2 {
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f4f4d5; }
+
+/*MAPA*/
+.btn--instagram {
+  background-color: pink; }
+
+.btn--facebook {
+  background-color: blue; }
+
+.btn--email {
+  background-color: black; }
+
+.botonWpp {
+  background-color: #11d611;
+  padding: 10px;
+  color: #11d611; }
+
+/*EXTEND*/
+.texto1, .texto2 {
+  background-color: #f4f4d5;
+  padding: 20px; }
+
+.texto2 {
+  border: 1px, solid, black; }
+
+/*MIXIN*/
+.texto1, .texto2 {
+  margin: 10px;
+  padding: 30px; }
+
+h3 {
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px; }
+
+h1 {
+  color: aquamarine; }
+
+header p {
+  font-size: 15px; }

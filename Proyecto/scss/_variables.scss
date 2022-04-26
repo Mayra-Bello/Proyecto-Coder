@@ -1,0 +1,50 @@
+$colorPrincipal: brown;
+
+$instagram: pink;
+$facebook: blue;
+$email: black;
+
+/*MAPA*/
+
+$redes: (
+    instagram:pink,
+    facebook: blue,
+    email: black,
+);
+@each $red, $color in $redes {
+    .btn--#{$red} {
+        background-color: $color;
+    }
+}
+
+$estilosBotonWpp:(
+    color: rgb(17, 214, 17),
+    height: 10px,
+    width: 10px,
+);
+.botonWpp {
+    background-color: map-get($estilosBotonWpp, color );
+    padding: map-get($estilosBotonWpp, width );
+    color: map-get($estilosBotonWpp, color );
+}
+
+/*EXTEND*/
+.texto1 {
+    background-color: #f4f4d5;
+    padding: 20px;
+}
+.texto2 {
+    @extend .texto1;
+    border: 1px, solid, black;
+}
+
+/*MIXIN*/
+
+@mixin tamaños ($margin, $padding) {
+    margin: $margin; 
+    padding: $padding;
+}
+
+.texto1 {
+    @include tamaños(10px,30px )
+}
