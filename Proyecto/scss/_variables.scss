@@ -48,3 +48,12 @@ $estilosBotonWpp:(
 .texto1 {
     @include tamaños(10px,30px )
 }
+
+@mixin imagenIndex  ($height, $width) {
+    height: $height;
+    width: $width;
+    
+}
+.carrusel {
+    @include imagenIndex(50px,50px )
+}
