@@ -8,6 +8,21 @@ html{
 /*INDEX*/
 /*HEADER*/
 
+.whatsapp img {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #12e671;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+}
+
 .contenedorLogoPrincipal {
     padding: 10px 10px;
     display: flex;
@@ -15,7 +30,7 @@ html{
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: #D4A373;
+    background-color: #F3D5B5;
 }
 .contenedorLogoPrincipal img{
 
@@ -33,7 +48,7 @@ html{
 }
 
 .menuPrincipal {
-    background-color: #D4A373;
+    background-color: #F3D5B5;
 }
 .tituloPrincipal {
     font-family:'Arial Narrow';
@@ -45,12 +60,12 @@ html{
 header h3{
     text-align: center;
     color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 20px 20px;
 }
 
 .menu{
-    background-color:#FAEDCD;
+    background-color:#F3D5B5;
 }
 
 .menu li{
@@ -109,9 +124,10 @@ header h3{
 }
 .tituloDestacados{
     font-family:'Times New Roman';
+    padding: 20px;
     font-style: italic;
     color: black;
-    background-color: #f8fcd2;
+    background-color: #F3D5B5;
     text-align: center;
 }
 .contenedorDestacados img {
@@ -226,21 +242,28 @@ header h3{
 /*HEADER PRODUCTOS*/
 
 #headerProductos {
-    background-color: #D4A373; 
+    background-color: #F3D5B5; 
 }
 
 /*SECTION PRODUCTOS*/ 
 
+.seccionProductos p {
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: left;
+}
+
+
 .seccionProductos {
-    background-color: #FEFAE0;
+    background-color: #F3D5B5;
     padding: 20px 20px;
 }
 .seccionProductos h3 {
     padding: 10px;
-    font-family:'Times New Roman';
-    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
-    text-align: center;
+    text-align: left;
 }
 .formularioProductos {
     padding: 10px;
@@ -383,15 +406,17 @@ header h3{
 /*SECTION CONTACTO*/
 
 .contactoTitulo {
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    background-color: #FEFAE0;
-}
-#contenedorContacto {
-    background-color:#FEFAE0;
     padding: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: left;
+    background-color: #F3D5B5;
+}
+
+#contenedorContacto {
+    background-color:#FFEDD8;
+    padding: 10px;
+    font-family:monospace;
     font-size:20px ;
     text-align: center;
 }
@@ -454,7 +479,30 @@ header h3{
         width:250px ;
         height: 200px;
     }
+    .texto1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
 
+@media screen and (max-width: 765px) {
+    .texto1 p {
+        display: gri;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .textoOrigen { 
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+    
+    .texto1 img {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 }
 
 /*RESPONSIVE TABLET EMPRESA*/
@@ -462,7 +510,7 @@ header h3{
 
 /*TEXTOS*/
 .primerParrafo {
-    background-color: #D4A373; }
+    background-color: #F3D5B5; }
     .primerParrafo h3 {
     font-family: 'Times New Roman', Times, serif;
     display: flex;
@@ -474,15 +522,41 @@ header h3{
     .primerParrafo:hover {
     font-size: 30px; }
 
-    .segundoParrafo {
-        background-color: #FAEDCD; }
-        .segundoParrafo h3 {
-        font-family: 'Times New Roman', Times, serif;
-        display: flex;
-        justify-content: left; }
-        .segundoParrafo p {
-        line-height: 30px;
-        font-size: 15px;
-        padding: 20px; }
-        .segundoParrafo:hover {
-        font-size: 30px; }
+.segundoParrafo {
+    background-color: #FAEDCD; }
+    .segundoParrafo h3 {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: left; }
+    .segundoParrafo p {
+    line-height: 30px;
+    font-size: 15px;
+    padding: 20px; }
+    .segundoParrafo:hover {
+    font-size: 30px; }
+
+.texto1 {
+    padding: 10px;
+    font-style: oblique;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+
+
+.texto1 img {
+    width: 400px;
+    height: 400px;
+}
+
+.textoOrigen p {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/*FOOTER*/
+#footerTexto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
